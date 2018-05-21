@@ -6,6 +6,7 @@ url_assignees = "https://api.github.com/repos/saltstack/salt/assignees"
 # salt - repo name
 req = requests.get(url_assignees)
 print("Status code:", req.status_code)
+# Status code: 200
 # 200 is OK
 
 response_dict = req.json()
